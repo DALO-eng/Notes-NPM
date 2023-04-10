@@ -10,6 +10,9 @@ There are 3 types of dependency:
 
 Mandatory dependencies for our project. They are installed with the command: **npm install (package) / npm install (package) --save**
 
+#### Optional dependencies
+Dependencies that don't necessarily need to be installed. Just need to add a **-O** at the end of the installation.
+
 ### Dev dependencies
 
 Dependencies that are not mandatory in our project to work, they are used to improve our code quality and optimization. They are installed with the following commands: **npm install (package) / npm install (package) --save-dev**
@@ -20,6 +23,13 @@ Dependencies that will be available for all the projects in our PCs, they are in
 
 The package.json file contains all these dependencies.
 
+We can install specific versions of a dependency by adding a **@[version]** at the end of the installation. We can also add a **@latest** for the last version.
+
+We can simulate an installation by adding **--dry-run**.
+
+If you want to install every single dependency that is on the package.json file, just use **npm install**.
+
 ## npm list
 
 Provide us with a list of the multiple packages we are using.
+
