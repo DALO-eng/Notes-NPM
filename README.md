@@ -21,6 +21,7 @@ Dependencies that are not mandatory in our project to work, they are used to imp
 
 Dependencies that will be available for all the projects in our PCs, they are installed with the following command: **npm install (package) --global**
 
+
 The package.json file contains all these dependencies.
 
 We can install specific versions of a dependency by adding a **@[version]** at the end of the installation. We can also add a **@latest** for the last version.
@@ -33,3 +34,14 @@ If you want to install every single dependency that is on the package.json file,
 
 Provide us with a list of the multiple packages we are using.
 
+### Scripts
+We can create our own scripts on the "scripts" section, we can run them with **npm run [ name ]**
+
+We can execute a NPM command remotely with NPX
+
+## Update
+Dependencies can be updated by using npm install package@latest
+
+You can visualize the packages that are not updated by using **npm outdate**
+
+When we install dependencies, it can show warning due to outdated packages, we can see this errors by using **npm audit** and fix them with **npm audit fix & npm audit fix --force**
