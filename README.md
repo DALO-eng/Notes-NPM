@@ -34,7 +34,7 @@ If you want to install every single dependency that is on the package.json file,
 
 Provide us with a list of the multiple packages we are using.
 
-### Scripts
+## Scripts
 We can create our own scripts on the "scripts" section, we can run them with **npm run [ name ]**
 
 We can execute a NPM command remotely with NPX
@@ -45,3 +45,5 @@ Dependencies can be updated by using npm install package@latest
 You can visualize the packages that are not updated by using **npm outdate**
 
 When we install dependencies, it can show warning due to outdated packages, we can see this errors by using **npm audit** and fix them with **npm audit fix & npm audit fix --force**
+
+To uninstall a dependency just do **npm uninstall package** or we can manually delete it on the package.json file, deleting node_modules and doing npm install again.
